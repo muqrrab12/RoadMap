@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI/ML Engineer Roadmap — The One Best Plan</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="hero">
+  <p class="eyebrow">THE ONE BEST PLAN &middot; NOV 2026 &rarr; AUG 2027</p>
+  <h1>AI/ML Engineer Roadmap</h1>
+  <p class="subtitle">Built for one learner, not everyone. Python &amp; OOP done. NumPy done. Pandas in progress through the CampusX DSMP mentorship program (paid sessions in hand). Lectures capped at <strong>1 hour per day</strong>.</p>
+  <div class="progress-wrap">
+    <div class="progress-top"><span id="progress-text">0 / 10 months complete</span><button id="reset-btn" type="button">Reset progress</button></div>
+    <div class="progress-bar"><div id="progress-fill"></div></div>
+    <p class="progress-note">Progress is saved in your browser only (localStorage). It does not sync across devices.</p>
+  </div>
+</header>
+
+<main>
+<section>
+  <h2>1. The rules that make this plan work</h2>
+  <div class="cards">
+    <div class="card"><h3>1 hour lecture / day</h3><p>Never more. Lectures are capped; the rest of the day is practice, not more videos.</p></div>
+    <div class="card"><h3>45 min practice</h3><p>Every lecture day ends with code written by you — no exceptions, no "I'll practice later".</p></div>
+    <div class="card"><h3>Split long sessions</h3><p>DSMP sessions are long. Split one session across 2&ndash;3 days instead of bingeing it.</p></div>
+    <div class="card"><h3>One path per topic</h3><p>Never watch two playlists for the same topic. Pick one, finish it, move on.</p></div>
+    <div class="card"><h3>GitHub proof weekly</h3><p>Something pushed every week. An empty GitHub means the plan has stalled, whatever the watch history says.</p></div>
+    <div class="card"><h3>Triage, don't complete</h3><p>Full DSMP is ~389 hours — at 1 hour/day that is ~1.5 years. This plan selects modules. Everything is not watched.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>2. The spine — in this exact order</h2>
+  <ol class="spine">
+    <li><strong>DSMP (selected modules)</strong> — Pandas finish, Data Viz, EDA, SQL, Statistics</li>
+    <li><strong>100 Days of Machine Learning</strong> — primary source for ML algorithms</li>
+    <li><strong>100 Days of Deep Learning</strong> — concepts (~52 hours total) + PyTorch for implementation</li>
+    <li><strong>CampusX NLP</strong> — theory foundations, then practical text projects</li>
+    <li><strong>Generative AI with LangChain</strong> — LLMs, RAG, vector databases</li>
+    <li><strong>Agentic AI with LangGraph</strong> — tool-using agents, memory, state</li>
+    <li><strong>Deployment</strong> — FastAPI, Docker, MLflow</li>
+    <li><strong>Portfolio &amp; jobs</strong> — deployed projects, resume, LinkedIn, interviews</li>
+  </ol>
+  <p class="note">Do not learn Computer Vision deeply as a separate track. The CNN part of Deep Learning covers enough for an AI/ML engineer in 2026; NLP + GenAI is the track that pays off here.</p>
+</section>
+
+<section>
+  <h2>3. Playlist verdicts — watch, skip, or revise</h2>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>Playlist / source</th><th>Verdict</th><th>Why</th></tr></thead>
+    <tbody>
+      <tr><td><a href="https://learnwith.campusx.in/blog/campusx-data-science-mentorship-program-curriculum">DSMP 2.0 (paid, CampusX)</a></td><td class="v-watch">SPINE</td><td>You are already inside it. Selected modules only: Pandas, Data Viz, EDA, SQL, Statistics. Not all 389 hours.</td></tr>
+      <tr><td><a href="https://www.youtube.com/playlist?list=PLKnIA16_Rmvbr7zKYQuBfsVkjoLcJgxHH">100 Days of Machine Learning (CampusX)</a></td><td class="v-watch">PRIMARY for ML</td><td>The most structured algorithm-by-algorithm ML course. Primary source for regression, classification, trees, ensembles, clustering, tuning.</td></tr>
+      <tr><td>DSMP ML sessions</td><td class="v-revise">REVISION only</td><td>Overlaps 100 Days of ML. Use only when a DSMP assessment or case study needs it. Never watch both fully.</td></tr>
+      <tr><td><a href="https://www.youtube.com/playlist?list=PLKnIA16_RmvYuZauWaPlRTC54KxSNLtNn">100 Days of Deep Learning (CampusX)</a></td><td class="v-watch">WATCH</td><td>ANN, backprop, optimizers, CNN, RNN/LSTM, transformers. ~52 hours total, so ~10&ndash;11 weeks at 1 hour/day.</td></tr>
+      <tr><td>CampusX PyTorch playlist</td><td class="v-watch">WATCH with DL</td><td>100 Days of DL teaches concepts; implement your DL projects in PyTorch (the 2026 industry framework). Find it on the CampusX channel.</td></tr>
+      <tr><td><a href="https://www.youtube.com/watch?v=zlUpTlaxAKI&list=PLKnIA16_RmvZo7fp5kkIth6nRTeQQsjfX">CampusX NLP playlist</a></td><td class="v-watch">WATCH</td><td>Theory-heavy (15+ hours): preprocessing, tokenization, BoW, TF-IDF, Word2Vec, HMM. Pair every section with a small practical project.</td></tr>
+      <tr><td><a href="https://www.youtube.com/playlist?list=PLKnIA16_RmvaTbihpo4MtzVm4XOQa0ER0">Generative AI with LangChain (CampusX)</a></td><td class="v-watch">WATCH</td><td>21 videos: LangChain, RAG, vector stores, retrievers, tool calling, end-to-end agent. The GenAI core.</td></tr>
+      <tr><td><a href="https://www.youtube.com/playlist?list=PLKnIA16_RmvYsvB8qkUQuJmJNuiCUJFPL">Agentic AI with LangGraph (CampusX)</a></td><td class="v-watch">WATCH</td><td>Stateful agents, memory, control. Watch only after the LangChain playlist.</td></tr>
+      <tr><td><a href="https://learnwith.campusx.in/s/store/courses?&page=1">CampusX deployment courses</a></td><td class="v-watch">WATCH at stage 7</td><td>FastAPI for ML, Docker for ML, MLflow for MLOps — only in the deployment month, not before.</td></tr>
+      <tr><td><a href="https://www.youtube.com/playlist?list=PLu0W_9lII9agICnT8t4iYVSZ3eykIAOME">100 Days of Python / CodeWithHarry Python</a></td><td class="v-skip">SKIP</td><td>Done already. Never re-watch.</td></tr>
+      <tr><td><a href="http://www.youtube.com/playlist?list=PLW5oosB3ewm1L6dpMntUUPrnNqHEcAanu">Krish Naik one-shots</a></td><td class="v-revise">BOOSTER</td><td>Statistics in 6 hours, ML/DL/NLP one-shots, EDA, Docker, end-to-end projects. Second explanation + revision, never a parallel track.</td></tr>
+      <tr><td><a href="https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab">3Blue1Brown — Linear Algebra / Calculus / Neural Nets</a></td><td class="v-revise">INTUITION</td><td>Watch when the math feels shaky. Intuition first, formulas second.</td></tr>
+      <tr><td>StatQuest (Josh Starmer)</td><td class="v-revise">CONCEPTS</td><td>Short, clear explainers for any statistics or ML concept that feels stuck. Search the channel by topic.</td></tr>
+      <tr><td><a href="https://www.coursera.org/programs/cse-nxvfk/specializations/machine-learning-introduction">Andrew Ng ML Specialization (Coursera)</a></td><td class="v-revise">OPTIONAL</td><td>Certificate value only. It overlaps 100 Days of ML — take it only if you want a certificate, not for learning.</td></tr>
+      <tr><td><a href="https://course.fast.ai/">fast.ai — Practical Deep Learning</a></td><td class="v-revise">ALTERNATIVE</td><td>Practical PyTorch-first DL. Use only if 100 Days of DL feels too theoretical.</td></tr>
+      <tr><td><a href="https://www.kaggle.com/">Kaggle</a></td><td class="v-watch">PRACTICE</td><td>Datasets, notebooks, competitions. Every EDA and ML project starts here.</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="note">Links were verified in October 2026. Two sources are named without a direct link because their exact playlist URL could not be verified: the CampusX PyTorch playlist and StatQuest — search the channel name on YouTube. No guessed URLs are used anywhere on this page.</p>
+</section>
+
+<section>
+  <h2>4. Month by month — November 2026 to August 2027</h2>
+  <p>Each month has 4 weeks. Weekly rhythm everywhere: Mon&ndash;Fri 1 hour lecture + 45 min practice, Saturday mini-project, Sunday revision + GitHub push.</p>
+
+  <article class="month" data-month="m1">
+    <h3><label><input type="checkbox" class="month-check" data-month="m1"> Month 1 — November 2026: Finish Pandas</label></h3>
+    <p><strong>Source:</strong> DSMP Pandas modules (remaining part only).</p>
+    <ul><li>Week 1: Series, DataFrames, indexing, selection</li><li>Week 2: groupby, merge, join, pivot tables</li><li>Week 3: missing data, apply, string/date handling</li><li>Week 4: full Pandas project — clean and analyze one real messy dataset end to end</li></ul>
+    <p><strong>Pass condition:</strong> you can do groupby, merge and pivot without looking up the basics.</p>
+  </article>
+
+  <article class="month" data-month="m2">
+    <h3><label><input type="checkbox" class="month-check" data-month="m2"> Month 2 — December 2026: Data Visualization + EDA</label></h3>
+    <p><strong>Source:</strong> DSMP Data Viz + EDA modules. Booster: Krish Naik EDA one-shot if stuck.</p>
+    <ul><li>Week 1: Matplotlib foundations, plots that answer questions</li><li>Week 2: Seaborn, distributions, relationships, categorical plots</li><li>Week 3: EDA workflow on a Kaggle dataset — questions first, plots second</li><li>Week 4: complete EDA report as a notebook on GitHub</li></ul>
+    <p><strong>Pass condition:</strong> a full EDA notebook that reads like an analysis, not a plot dump. DSMP Assessment 2 (NumPy + Pandas + Data Viz + EDA) completed.</p>
+  </article>
+
+  <article class="month" data-month="m3">
+    <h3><label><input type="checkbox" class="month-check" data-month="m3"> Month 3 — January 2027: SQL</label></h3>
+    <p><strong>Source:</strong> DSMP SQL modules.</p>
+    <ul><li>Week 1: SELECT, WHERE, ORDER BY, LIMIT, filtering</li><li>Week 2: JOINs (inner, left, right, full) and set logic</li><li>Week 3: GROUP BY, aggregations, HAVING, subqueries</li><li>Week 4: 20+ queries on a real database + one small SQL project</li></ul>
+    <p><strong>Pass condition:</strong> you can write any join/aggregation query confidently. DSMP Assessment 3 (SQL) completed.</p>
+  </article>
+
+  <article class="month" data-month="m4">
+    <h3><label><input type="checkbox" class="month-check" data-month="m4"> Month 4 — February 2027: Statistics</label></h3>
+    <p><strong>Source:</strong> DSMP Statistics modules. Booster: Krish Naik Complete Statistics (6 hours) for revision.</p>
+    <ul><li>Week 1: distributions, mean/variance, sampling</li><li>Week 2: probability, Bayes, confidence intervals</li><li>Week 3: hypothesis testing, p-values, A/B testing logic</li><li>Week 4: statistics project — test a real hypothesis on real data, write it up</li></ul>
+    <p><strong>Pass condition:</strong> you can explain p-values, distributions and bias&ndash;variance in plain words. DSMP Assessment 4 (Statistics) completed.</p>
+  </article>
+
+  <article class="month" data-month="m5">
+    <h3><label><input type="checkbox" class="month-check" data-month="m5"> Month 5 — March 2027: Machine Learning, part 1</label></h3>
+    <p><strong>Source:</strong> 100 Days of Machine Learning (primary). DSMP ML sessions only as revision.</p>
+    <ul><li>Week 1: regression — simple, multiple, polynomial; metrics (MSE, MAE, RMSE, R&sup2;)</li><li>Week 2: gradient descent (batch, stochastic, mini-batch); regularization (Ridge, Lasso)</li><li>Week 3: classification — logistic regression, kNN, Naive Bayes; metrics (precision, recall, F1, ROC)</li><li>Week 4: project — house-price regression and a classifier, both with proper train/test evaluation</li></ul>
+    <p><strong>Pass condition:</strong> two evaluated models on GitHub with a written explanation of every metric you report.</p>
+  </article>
+
+  <article class="month" data-month="m6">
+    <h3><label><input type="checkbox" class="month-check" data-month="m6"> Month 6 — April 2027: Machine Learning, part 2</label></h3>
+    <p><strong>Source:</strong> 100 Days of Machine Learning (continued).</p>
+    <ul><li>Week 1: decision trees, Random Forest, bagging</li><li>Week 2: boosting — AdaBoost, Gradient Boosting, XGBoost</li><li>Week 3: SVM, PCA, clustering (K-Means, hierarchical, DBSCAN)</li><li>Week 4: end-to-end ML project with a clean pipeline (preprocessing + model + tuning + evaluation)</li></ul>
+    <p><strong>Pass condition:</strong> one pipeline-based project on GitHub. DSMP Assessment 5 (ML Linear Model) completed; one DSMP case study started.</p>
+  </article>
+
+  <article class="month" data-month="m7">
+    <h3><label><input type="checkbox" class="month-check" data-month="m7"> Month 7 — May 2027: Deep Learning, part 1</label></h3>
+    <p><strong>Source:</strong> 100 Days of Deep Learning (Days 1&ndash;~54). Implement in PyTorch.</p>
+    <ul><li>Week 1: perceptron, MLP, forward propagation</li><li>Week 2: backpropagation, loss functions, weight initialization</li><li>Week 3: optimizers (SGD + momentum, Adam), batch normalization, tuning</li><li>Week 4: CNN project — image classifier with transfer learning</li></ul>
+    <p><strong>Pass condition:</strong> a CNN classifier on GitHub, built in PyTorch, with training curves you can explain.</p>
+  </article>
+
+  <article class="month" data-month="m8">
+    <h3><label><input type="checkbox" class="month-check" data-month="m8"> Month 8 — June 2027: Deep Learning, part 2 + NLP foundations</label></h3>
+    <p><strong>Source:</strong> 100 Days of Deep Learning (RNN/LSTM, transformers) + CampusX NLP playlist.</p>
+    <ul><li>Week 1: RNN, LSTM, GRU — sequence thinking</li><li>Week 2: attention, transformers — self-attention, multi-head, positional encoding</li><li>Week 3: NLP theory — preprocessing, tokenization, BoW, TF-IDF, Word2Vec</li><li>Week 4: project — sentiment classifier with a full text pipeline</li></ul>
+    <p><strong>Pass condition:</strong> you can explain attention in plain words and ship a text classifier.</p>
+  </article>
+
+  <article class="month" data-month="m9">
+    <h3><label><input type="checkbox" class="month-check" data-month="m9"> Month 9 — July 2027: Generative AI + Agents</label></h3>
+    <p><strong>Source:</strong> CampusX Generative AI with LangChain, then Agentic AI with LangGraph.</p>
+    <ul><li>Week 1: LLM basics, prompts, structured output, chains</li><li>Week 2: RAG — document loaders, splitters, vector stores, retrievers</li><li>Week 3: RAG chatbot project on your own documents</li><li>Week 4: LangGraph agents — tools, memory, state; one tool-using agent project</li></ul>
+    <p><strong>Pass condition:</strong> a RAG chatbot and an agent, both on GitHub, both actually working — not demos that only run once.</p>
+  </article>
+
+  <article class="month" data-month="m10">
+    <h3><label><input type="checkbox" class="month-check" data-month="m10"> Month 10 — August 2027: Deployment, portfolio, jobs</label></h3>
+    <p><strong>Source:</strong> CampusX FastAPI / Docker / MLflow courses + DSMP career sessions.</p>
+    <ul><li>Week 1: FastAPI — wrap a model in an API; Docker — containerize it</li><li>Week 2: MLflow — track experiments; deploy one project end to end</li><li>Week 3: portfolio — GitHub cleaned up, README per project, LinkedIn rebuilt, resume written</li><li>Week 4: job sprint — 10+ real applications, interview prep (explain your 3 best projects out loud)</li></ul>
+    <p><strong>Pass condition:</strong> two deployed projects with live links, a finished portfolio, and applications actually sent.</p>
+  </article>
+</section>
+
+<section>
+  <h2>5. Channels — who to learn what from</h2>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>Channel</th><th>Use for</th><th>When</th></tr></thead>
+    <tbody>
+      <tr><td>CampusX</td><td>The spine: DSMP, 100 Days ML/DL, NLP, LangChain, LangGraph, deployment</td><td>All 10 months</td></tr>
+      <tr><td>Krish Naik</td><td>Second explanations, statistics booster, end-to-end projects</td><td>When stuck, or for project patterns</td></tr>
+      <tr><td>3Blue1Brown</td><td>Math intuition: linear algebra, calculus, neural networks</td><td>Whenever the math feels shaky</td></tr>
+      <tr><td>StatQuest</td><td>Short concept explainers (statistics + ML)</td><td>Single confused topics only</td></tr>
+      <tr><td>CodeWithHarry</td><td>Python basics (already done — no further use in this plan)</td><td>Done</td></tr>
+      <tr><td>Kaggle</td><td>Datasets, notebooks, competitions, free GPU</td><td>Every project month</td></tr>
+      <tr><td>Hugging Face</td><td>Transformers, models, datasets, spaces for deployment</td><td>Months 8&ndash;10</td></tr>
+      <tr><td>Andrej Karpathy</td><td>Deep dive: building GPT from scratch, LLM fine-tuning (optional)</td><td>After Month 8, only if curious</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<section>
+  <h2>6. Bookshelf — read alongside, not instead</h2>
+  <ul>
+    <li><strong>Hands-On Machine Learning with Scikit-Learn, Keras &amp; TensorFlow</strong> — Aurélien Géron (Months 5&ndash;6)</li>
+    <li><strong>Deep Learning</strong> — Goodfellow, Bengio &amp; Courville (Months 7&ndash;8, reference)</li>
+    <li><strong>Understanding Deep Learning</strong> — Simon J.D. Prince (Months 7&ndash;8, visual intuition)</li>
+    <li><strong>An Introduction to Statistical Learning (ISLR)</strong> — James et al. (Months 4&ndash;6)</li>
+    <li><strong>Mathematics for Machine Learning</strong> — Deisenroth, Faisal &amp; Ong (Months 4&ndash;5, math reference)</li>
+    <li><strong>Designing Machine Learning Systems</strong> — Chip Huyen (Month 10, deployment thinking)</li>
+  </ul>
+</section>
+
+<section>
+  <h2>7. Your first 3 steps — today</h2>
+  <ol>
+    <li>Open the DSMP Pandas modules and finish the next session — 1 hour, then 45 minutes of your own code on a real dataset.</li>
+    <li>Create (or clean) your GitHub repo for this plan. Month 1's project goes there, with a README.</li>
+    <li>Bookmark this page and tick Month 1 when November's Pandas project is done — not before.</li>
+  </ol>
+</section>
+
+<footer>
+  <p>Built October 2026. One plan, one spine, one hour of lectures a day. If a month slips, the month moves — the order does not change.</p>
+</footer>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
